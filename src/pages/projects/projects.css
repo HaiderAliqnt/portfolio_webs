@@ -1,0 +1,36 @@
+.project-screen-container{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-text-section{
+    height: 15%;
+    width:100%;
+    font-family: 'Lexend';
+    color:#FFA600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5rem;
+}
+
+.project-showcase-box{
+    height: 60vh;
+    width:60vw;
+    display: flex;
+}
+
+img{
+    background-color: transparent;
+}
+
+.project-btn{
+    align-self: center;
+    color:white;
+    background-color: transparent;
+    font-size: 50px;
+}

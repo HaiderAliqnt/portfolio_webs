@@ -1,0 +1,46 @@
+.project-card-container{
+    height:100%;
+    width:100%;
+    background-color: rgb(40,40,40);
+    display: flex;
+    flex-direction: row;
+    border-radius: 30px;
+}
+
+.projectcard-text-section{
+    height: 100%;
+    width:50%;
+    background-color: transparent;
+    margin:0px;
+    color:white;
+    font-family: 'Lexend';
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center; 
+    padding-left: 5%;
+}
+#p_name{
+    font-size: 3rem;
+    margin-bottom: 10px;
+    background-color: transparent;
+}
+#p_desc{
+    font-size: 2rem;
+    background-color: transparent;
+    margin-bottom: 20px;
+}
+#p_git{
+    font-size:1.5rem; 
+    background-color: transparent;
+    color:#FFA600;
+}
+
+.projectcard-image-section{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+}

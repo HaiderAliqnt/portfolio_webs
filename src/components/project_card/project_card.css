@@ -44,3 +44,8 @@
     align-items: center;
     background-color: transparent;
 }
+
+#project-card-image{
+    height:50%;
+    border-radius: 20px;
+}

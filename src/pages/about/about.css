@@ -40,6 +40,7 @@
     font-family: 'Lexend';
     background-color: transparent;   
     display: block; 
+    opacity: 0;
 }
 .techcard-description{
     color :white;
@@ -84,7 +85,7 @@
     flex-direction: column;
     justify-content: first baseline;
     align-items: center;
-    transform:rotate(-20deg);
+    /* transform:rotate(-20deg); */
     z-index:1;
 }
 .image-box{
@@ -106,7 +107,7 @@
 .image-descriptive-text-section{
     height: 90%;
     width:40%;
-    transform:rotate(20deg);
+    /* transform:rotate(20deg); */
     background-color: rgba(37, 37, 37, 0.61);
 
 }
@@ -172,4 +173,8 @@
     font-size:3rem;
     font-family: 'Lexend';
     
+}
+.contact-cards-container > * {
+  opacity: 0;
+  transform: translateY(-80px);
 }

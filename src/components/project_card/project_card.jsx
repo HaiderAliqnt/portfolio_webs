@@ -12,7 +12,7 @@ function Project_Card(props) {
                     <a id="p_git" href={props.project_github}>View project on github</a>
                 </div>
                 <div className="projectcard-image-section">
-                    <img src={props.image_path}/>
+                    <img id="project-card-image" src={props.image_path}/>
                 </div>
             </div>
         </>

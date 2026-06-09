@@ -13,7 +13,7 @@ function Projectpage() {
         project_name: "Divido",
         project_description: "Create groups, split bills, send reminders, and track dues effortlessly.",
         project_github: "link",
-        image_path:'src/pages/projects/divido.png',
+        image_path:'src/assets/DIVIDO.png',
            
     }, 
 
@@ -21,13 +21,13 @@ function Projectpage() {
         project_name: "GIK GO",
         project_description: "Peer-to-peer logistics solution built for university campuses.",
         project_github: "link",
-        image_path:'src/pages/projects/gikgo.png',
+        image_path:'src/assets/GIKGO.png',
     },
     {
         project_name: "SL Market",
         project_description: "A genz streetwear Ecommerce store with admin panel.",
         github: "link",
-        image_path:'/assets/divido.png',
+        image_path:'src/assets/slmarket.png',
     }
     ]
 

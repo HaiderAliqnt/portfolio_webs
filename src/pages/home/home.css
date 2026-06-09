@@ -1,10 +1,15 @@
 *{
     margin : 0px;
+
+}
+body{
     background-color: black;
 }
-
+/* .screen-container, .home-text-section, .nav-btn {
+  opacity: 1 !important;
+} */
 .screen-container{
-    height: 100vh;
+    height: 95vh;
     width: 100vw;
     display: flex;
     flex-direction: column;
@@ -34,7 +39,15 @@
    font-size:50px; 
    display: inline;
 }
+.cursor {
+  animation: blink 1s infinite;
+}
 
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
 .dynamic-text{
     display: flex;
     flex-direction: row;

@@ -59,7 +59,7 @@ function Resume() {
                         <div className="timeline-item">
                             <div className="timeline-node">
                                 <div className="node-dot" />
-                                <div className="node-line" />
+                                {/* <div className="node-line" /> */}
                             </div>
                             <div className="timeline-content">
                                 <div className="timeline-header">
@@ -76,7 +76,7 @@ function Resume() {
                         <div className="timeline-item">
                             <div className="timeline-node">
                                 <div className="node-dot" />
-                                <div className="node-line" />
+                                {/* <div className="node-line" /> */}
                             </div>
                             <div className="timeline-content">
                                 <div className="timeline-header">

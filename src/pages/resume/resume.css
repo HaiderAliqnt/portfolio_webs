@@ -51,7 +51,7 @@
     color: #FFA600;
 }
 
-.dot {
+.dot { 
     color: #FFA600;
     font-size: 1rem;
 }
@@ -108,8 +108,8 @@
     color: #FFA600;
     white-space: nowrap;
     padding: 3px 10px;
-    border: 1px solid rgba(255, 166, 0, 0.35);
-    border-radius: 20px;
+    /* border: 1px solid rgba(255, 166, 0, 0.35);
+    border-radius: 20px; */
     flex-shrink: 0;
 }
 
@@ -138,7 +138,7 @@
     border-radius: 50%;
     background-color: #FFA600;
     border: 2px solid black;
-    outline: 2px solid #FFA600;
+    /* outline: 2px solid #FFA600; */
     flex-shrink: 0;
     z-index: 1;
 }

@@ -7,7 +7,7 @@ import Aboutpage from './pages/about/about.jsx'
 import Projectpage from './pages/projects/projects.jsx'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import Layout from './outline.jsx'
-
+import Resume from './pages/resume/resume.jsx'
 
 const router = createBrowserRouter([
     {
@@ -26,10 +26,10 @@ const router = createBrowserRouter([
           path:'/projects',
           element:<Projectpage/>
         },
-        // {
-        //   path:"/contact",
-        //   element
-        // },
+        {
+          path:"/resume",
+          element:<Resume/>
+        },
         // {
         //   path:"/blogs",
         //   element

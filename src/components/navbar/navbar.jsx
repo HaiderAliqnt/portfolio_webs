@@ -1,7 +1,8 @@
 import React from "react";
+import { useRef , useEffect} from "react";
 import './navbar.css'
 import { useLocation, useNavigate } from "react-router-dom";
-
+import gsap from "gsap";
 
 
 
@@ -10,6 +11,14 @@ function Navbar(){
     const navigate = useNavigate();
 
     const location = useLocation();
+
+    const navRef = useRef(null);
+    useEffect(() => {
+        gsap.fromTo(navRef.current,
+            { opacity: 0, y: -20 },
+            { opacity: 1, y: 0, duration: 0.8, ease: "power2.out" }
+        );
+    }, []);
 
     const isActive = (path)=>{
         return location.pathname === path 
@@ -27,7 +36,7 @@ function Navbar(){
     }
 
     const navbtnres = ()=>{
-
+        navigate('/resume')
     }
 
 
@@ -35,7 +44,7 @@ function Navbar(){
     
     return(
         <>
-            <div className="navbar-container">
+            <div className="navbar-container" ref={navRef} style={{ opacity: 0 }}>
                 <div className="navbar">
                     <div className="nav-tag" id="home">
                         <button className={isActive('/') ? 'navbtnactive' : 'navbtn' } id="home-navbtn"

@@ -137,7 +137,7 @@ function Aboutpage() {
                 <div className="tech-stack-section">
                     <div className="tech-stack-section-top"> 
                         <div className="about-image-section">
-                            <div className="polaroid-box" ref={polaroidRef}>
+                            <div className="polaroid-box" ref={polaroidRef} style={{ opacity: 0 }}>
                                 <div className="image-box">
                                     <img src="src/pages/about/pfp.png"></img>
                                 </div>
@@ -145,7 +145,7 @@ function Aboutpage() {
                                     LITERALLY ME 
                                 </div>
                             </div>
-                            <div className="image-descriptive-text-section" ref={quoteRef}>
+                            <div className="image-descriptive-text-section" ref={quoteRef} style={{ opacity: 0 }}>
                                 <span className="image-desc-text">"I hope the systems I build create opportunities for others</span>   
                                 <span className="image-desc-subnote">~Haider Ali</span> 
                             </div>

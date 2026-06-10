@@ -1,0 +1,315 @@
+.resume-page {
+    min-height: 100vh;
+    width: 100vw;
+    background-color: rgba(40, 40, 40, 0.726);
+    display: flex;
+    justify-content: center;
+    padding: 80px 20px 60px;
+}
+
+.resume-wrapper {
+    width: 100%;
+    max-width: 860px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+/* Header */
+.resume-header {
+    text-align: center;
+    border-bottom: 1px solid #FFA600;
+    padding-bottom: 24px;
+}
+
+.resume-name {
+    font-family: 'Lexend', sans-serif;
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: #FFA600;
+    letter-spacing: 2px;
+    margin: 0 0 12px;
+}
+
+.resume-contacts {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    font-family: 'Lexend', sans-serif;
+    font-size: 0.85rem;
+}
+
+.resume-contacts a {
+    color: #cccccc;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.resume-contacts a:hover {
+    color: #FFA600;
+}
+
+.dot { 
+    color: #FFA600;
+    font-size: 1rem;
+}
+
+/* Sections */
+.resume-section {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.section-title {
+    font-family: 'Lexend', sans-serif;
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #FFA600;
+    margin: 0;
+}
+
+.section-divider {
+    height: 1px;
+    background: rgba(255, 166, 0, 0.25);
+    margin-top: -8px;
+}
+
+/* Education */
+.edu-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 16px;
+}
+
+.edu-school {
+    font-family: 'Lexend', sans-serif;
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: white;
+    margin: 0 0 4px;
+}
+
+.edu-degree {
+    font-family: 'Lexend', sans-serif;
+    font-size: 0.85rem;
+    color: #aaaaaa;
+    margin: 0;
+}
+
+.date-tag {
+    font-family: 'Lexend', sans-serif;
+    font-size: 0.75rem;
+    color: #FFA600;
+    white-space: nowrap;
+    padding: 3px 10px;
+    /* border: 1px solid rgba(255, 166, 0, 0.35);
+    border-radius: 20px; */
+    flex-shrink: 0;
+}
+
+/* Timeline */
+.timeline {
+    display: flex;
+    flex-direction: column;
+}
+
+.timeline-item {
+    display: flex;
+    gap: 16px;
+}
+
+.timeline-node {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 4px;
+    flex-shrink: 0;
+}
+
+.node-dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #FFA600;
+    border: 2px solid black;
+    /* outline: 2px solid #FFA600; */
+    flex-shrink: 0;
+    z-index: 1;
+}
+
+.node-line {
+    width: 2px;
+    flex: 1;
+    background: linear-gradient(to bottom, #FFA600, rgba(255, 166, 0, 0.1));
+    margin-top: 4px;
+    min-height: 40px;
+}
+
+.timeline-content {
+    padding-bottom: 32px;
+    flex: 1;
+}
+
+.timeline-item.last .timeline-content {
+    padding-bottom: 0;
+}
+
+.timeline-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 12px;
+    margin-bottom: 10px;
+}
+
+.job-title {
+    font-family: 'Lexend', sans-serif;
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: white;
+}
+
+.timeline-bullets {
+    margin: 0;
+    padding-left: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.timeline-bullets li {
+    font-family: 'Lexend', sans-serif;
+    font-size: 0.82rem;
+    color: #bbbbbb;
+    line-height: 1.6;
+    background-color: transparent;
+}
+
+.timeline-bullets li::marker {
+    color: #FFA600;
+}
+
+/* Projects */
+.project-entry {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(255, 166, 0, 0.1);
+}
+
+.project-entry:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.project-entry-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.project-entry-name {
+    font-family: 'Lexend', sans-serif;
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: white;
+}
+
+.github-link {
+    font-family: 'Lexend', sans-serif;
+    font-size: 0.78rem;
+    color: #FFA600;
+    text-decoration: none;
+    transition: opacity 0.2s;
+}
+
+.github-link:hover {
+    opacity: 0.7;
+}
+
+.project-bullets {
+    margin: 0;
+    padding-left: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.project-bullets li {
+    font-family: 'Lexend', sans-serif;
+    font-size: 0.82rem;
+    color: #bbbbbb;
+    line-height: 1.6;
+    background-color: transparent;
+}
+
+.project-bullets li::marker {
+    color: #FFA600;
+}
+
+/* Skills */
+.skills-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.skill-row {
+    display: flex;
+    gap: 16px;
+    align-items: baseline;
+}
+
+.skill-label {
+    font-family: 'Lexend', sans-serif;
+    font-size: 0.78rem;
+    font-weight: 600;
+    color: #FFA600;
+    min-width: 110px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.skill-value {
+    font-family: 'Lexend', sans-serif;
+    font-size: 0.85rem;
+    color: #cccccc;
+    background-color: transparent;
+}
+
+/* Download */
+.resume-download-row {
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+}
+
+.download-btn {
+    font-family: 'Lexend', sans-serif;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: black;
+    background-color: #FFA600;
+    border: none;
+    border-radius: 25px;
+    padding: 12px 36px;
+    cursor: pointer;
+    letter-spacing: 1px;
+    transition: opacity 0.2s, transform 0.15s;
+}
+
+.download-btn:hover {
+    opacity: 0.85;
+    transform: translateY(-2px);
+}
+
+.download-btn:active {
+    transform: scale(0.97);
+}

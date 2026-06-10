@@ -16,6 +16,9 @@ function Homepage() {
   const handleAboutBtn = ()=>{
     navigate('/about')
   }
+  const handleResBtn = ()=>{
+    navigate('/resume')
+  }
 
   const [currentPhraseIndex, setCurrentPhraseIndex] = useState(0);
   const [displayedText, setDisplayedText] = useState("");
@@ -102,7 +105,7 @@ function Homepage() {
           <div className="text-buttons" ref={buttonRef} >
             <button className="nav-btn" id="Projects" onClick={handleWorkBtn}>View my Work</button>
             <button className="nav-btn" id="Blog" onClick={handleAboutBtn}>Get in Touch</button>
-            <button className="nav-btn" id="Resume">View my Resume</button>
+            <button className="nav-btn" id="Resume" onClick={handleResBtn}>View my Resume</button>
           </div>
         </div>
 

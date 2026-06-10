@@ -139,7 +139,7 @@ function Aboutpage() {
                         <div className="about-image-section">
                             <div className="polaroid-box" ref={polaroidRef} style={{ opacity: 0 }}>
                                 <div className="image-box">
-                                    <img src="src/pages/about/pfp.png"></img>
+                                    <img src="/assets/pfp.png"></img>
                                 </div>
                                 <div className="text-box">
                                     LITERALLY ME 

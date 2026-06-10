@@ -17,12 +17,14 @@
     align-items: center;
     font-size: 2.5rem;
     font-weight: 700;
+    font-size: clamp(1.2rem, 4vw, 2.5rem);
 }
 
 .project-showcase-box{
     height: 60vh;
-    width:60vw;
+    width: clamp(300px, 60vw, 900px);
     display: flex;
+    align-items: center;
 }
 
 img{
@@ -33,5 +35,33 @@ img{
     align-self: center;
     color:white;
     background-color: transparent;
-    font-size: 50px;
+    font-size: clamp(1.5rem, 4vw, 50px);
+    flex-shrink: 0;
+    cursor: pointer;
+    border: none;
+    padding: 0 8px;
+}
+@media (max-width: 768px) {
+    .project-showcase-box {
+        width: 90vw;
+        height: 50vh;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .project-screen-container {
+        justify-content: center;
+        gap: 16px;
+    }
+
+    .project-showcase-box {
+        width: 95vw;
+        height: 55vh;
+    }
+
+    .project-btn {
+        font-size: 1.5rem;
+        padding: 0 4px;
+    }
 }

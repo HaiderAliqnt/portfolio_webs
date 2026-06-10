@@ -3,7 +3,7 @@ import './techcards.css'
 
 function Techcard(props){
 
-
+    const isMobile = window.innerWidth <= 600;
     return(
     
     <>

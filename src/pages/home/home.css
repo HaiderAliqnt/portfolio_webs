@@ -1,98 +1,126 @@
-*{
-    margin : 0px;
-
+* {
+    margin: 0px;
 }
-body{
+body {
     background-color: black;
 }
-/* .screen-container, .home-text-section, .nav-btn {
-  opacity: 1 !important;
-} */
-.screen-container{
+
+.screen-container {
     height: 95vh;
     width: 100vw;
     display: flex;
     flex-direction: column;
+    padding-top: 60px;
 }
-.home-text-section{
-    height:100%;
+
+.home-text-section {
+    height: 100%;
     width: 100%;
-    display:flex;
+    display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
-.text-title{
-    height:50%;
-    width:100%;
-    color:white;
+.text-title {
+    height: 50%;
+    width: 100%;
+    color: white;
     font-family: 'Lexend';
-    display:flex;
+    display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding-top:15%
+    padding-top: 15%;
+    flex-wrap: wrap;        
+    gap: 8px;
 }
 
-.tag-line{
-   font-size:50px; 
-   display: inline;
+.tag-line {
+    font-size: clamp(1.5rem, 5vw, 50px);  
+    display: inline;
 }
+
 .cursor {
-  animation: blink 1s infinite;
+    animation: blink 1s infinite;
 }
 
 @keyframes blink {
-  50% {
-    opacity: 0;
-  }
+    50% { opacity: 0; }
 }
-.dynamic-text{
+
+.dynamic-text {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
     height: 5%;
     width: 100%;
-    font-size: 1.5rem;
+    font-size: clamp(0.9rem, 2.5vw, 1.5rem);  
 }
-#dynamic{
-    color:#FFA600;
-    font-family:"Lexend";
+
+#dynamic {
+    color: #FFA600;
+    font-family: "Lexend";
     margin-left: 1%;
 }
-#static{
-    color:white;
+
+#static {
+    color: white;
     font-family: 'Lexend';
 }
 
-#name{
-    margin-left:10px;
-    color:#FFA600;
+#name {
+    margin-left: 10px;
+    color: #FFA600;
 }
-.text-buttons{
+
+.text-buttons {
     height: 50%;
     width: 100%;
     display: flex;
+    flex-direction: row;
     justify-content: space-evenly;
+    align-items: center;
     padding-top: 10%;
 }
 
-.nav-btn{
-    height:15%;
-    width:10%;
+.nav-btn {
+    height: 15%;
+    width: 10%;
     background-color: #FFA600;
     font-weight: 750;
     border-radius: 15px;
+    font-size: clamp(0.6rem, 1.2vw, 1rem);  
+    cursor: pointer;
 }
 
-#Projects{
-    
-}
-#Blog{
+@media (max-width: 800px) {
+    .text-buttons {
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+        padding-top: 8%;
+        height: auto;
+    }
 
+    .nav-btn {
+        height: 44px;
+        width: 60%;
+        font-size: 0.9rem;
+    }
 }
-#Resume{
 
+
+@media (max-width: 480px) {
+    .text-title {
+        padding-top: 25%;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .nav-btn {
+        width: 75%;
+    }
 }

@@ -1,51 +1,98 @@
-.project-card-container{
-    height:100%;
-    width:100%;
-    background-color: rgb(40,40,40);
+.project-card-container {
+    height: 100%;
+    width: 100%;
+    background-color: rgb(40, 40, 40);
     display: flex;
     flex-direction: row;
     border-radius: 30px;
+    overflow: hidden;
 }
 
-.projectcard-text-section{
+.projectcard-text-section {
     height: 100%;
-    width:50%;
+    width: 50%;
     background-color: transparent;
-    margin:0px;
-    color:white;
+    color: white;
     font-family: 'Lexend';
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    justify-content: center; 
+    justify-content: center;
     padding-left: 5%;
+    padding-right: 3%;
 }
-#p_name{
-    font-size: 3rem;
+
+#p_name {
+    font-size: clamp(1.2rem, 3vw, 3rem); 
     margin-bottom: 10px;
     background-color: transparent;
 }
-#p_desc{
-    font-size: 2rem;
+
+#p_desc {
+    font-size: clamp(0.85rem, 1.8vw, 2rem); 
     background-color: transparent;
     margin-bottom: 20px;
-}
-#p_git{
-    font-size:1.5rem; 
-    background-color: transparent;
-    color:#FFA600;
+    line-height: 1.5;
 }
 
-.projectcard-image-section{
+#p_git {
+    font-size: clamp(0.75rem, 1.4vw, 1.5rem); 
+    background-color: transparent;
+    color: #FFA600;
+}
+
+.projectcard-image-section {
     height: 100%;
     width: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: transparent;
+    overflow: hidden;
 }
 
-#project-card-image{
-    height:50%;
+#project-card-image {
+    height: 75%;
+    width: 90%;
+    object-fit: contain; 
     border-radius: 20px;
+}
+
+
+@media (max-width: 480px) {
+    .project-card-container {
+        flex-direction: column;
+        border-radius: 20px;
+        overflow-y: auto;
+    }
+
+    .projectcard-text-section {
+        width: 100%;
+        height: auto;
+        padding: 20px 16px 10px;
+    }
+
+    .projectcard-image-section {
+        width: 100%;
+         height: 260px;
+    }
+
+    #project-card-image {
+        height: 100%;
+       width: 90%;
+        object-fit: contain;
+    }
+
+    #p_name {
+        font-size: clamp(1.4rem, 6vw, 2rem);
+    }
+
+    #p_desc {
+        font-size: clamp(0.85rem, 4vw, 1.2rem);
+    }
+
+    #p_git {
+        font-size: clamp(0.8rem, 3.5vw, 1rem);
+        margin-bottom: 8px;
+    }
 }

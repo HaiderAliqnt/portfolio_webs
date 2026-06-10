@@ -5,13 +5,18 @@ import './contact-card.css'
 function ContactCard(props){
 
     const [expanded , setExpanded] = useState(false);
-      const handleClick = () => {
-            if (!expanded) {
+    const isMobile = window.innerWidth <= 600; 
+    const handleClick = () => {
+        if (isMobile) {
+            window.open(props.link, "_blank"); 
+            return;
+        }
+        if (!expanded) {
             setExpanded(true);
-            } else {
-                setExpanded(false);
-                window.open(props.link, "_blank");
-            }
+        } else {
+            setExpanded(false);
+            window.open(props.link, "_blank");
+        }
     };
     return(
         <>

@@ -50,3 +50,20 @@
     color:white;
     font-size: 1.5rem;
 }
+
+@media (max-width: 768px) {
+    .contact-card {
+        width: 50px;
+        height: 50px;
+        border-radius: 50% !important; 
+    }
+
+    .contact-card.expanded {
+        width: 50px;         
+        border-radius: 50%;
+    }
+
+    .contact-content {
+        display: none;      
+    }
+}

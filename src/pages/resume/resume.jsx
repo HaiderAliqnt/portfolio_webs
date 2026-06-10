@@ -14,7 +14,7 @@ function Resume() {
 
     const handleDownload = () => {
         const link = document.createElement("a");
-        link.href = "src/assets/resume.pdf";
+        link.href = "assets/resume.pdf";
         link.download = "Muhammad_Haider_Ali_Resume.pdf";
         link.click();
     };

@@ -16,7 +16,7 @@ function Projectpage() {
     {
         project_name: "Divido",
         project_description: "Create groups, split bills, send reminders, and track dues effortlessly.",
-        project_github: "link",
+        project_github: "https://github.com/HaiderAliqnt/Divido",
         image_path:'src/assets/DIVIDO.png',
            
     }, 
@@ -24,7 +24,7 @@ function Projectpage() {
     {
         project_name: "GIK GO",
         project_description: "Peer-to-peer logistics solution built for university campuses.",
-        project_github: "link",
+        project_github: "https://github.com/HaiderAliqnt/Delivery-Service",
         image_path:'src/assets/GIKGO.png',
     },
     {

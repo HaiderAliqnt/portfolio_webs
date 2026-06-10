@@ -16,27 +16,27 @@ function Aboutpage() {
     const contacts = [
         {
             id:1,
-            contact_image_path: 'src/assets/gmail.png',
+            contact_image_path: '/assets/gmail.png',
             contact_title: 'Gmail',
             value:'muhammadhaideraliua@gmail.com',
             link:'mailto:muhammadhaideraliua@gmail.com'
         },
         {
             id:2,
-            contact_image_path: 'src/assets/linkedin.png',
+            contact_image_path: '/assets/linkedin.png',
             contact_title: 'Linkedin',
             value:'linkedin.com/in/haider-ali-35b72b304/',
             link:'https://www.linkedin.com/in/haider-ali-35b72b304/'
         },
         {   
             id:3, 
-            contact_image_path: 'src/assets/X.png',
+            contact_image_path: '/assets/X.png',
             contact_title: 'X',
             contact_link:''
         },
         {
             id:4, 
-            contact_image_path: 'src/assets/github.png',
+            contact_image_path: '/assets/github.png',
             contact_title: 'Github',
             value:'github.com/HaiderAliqnt',
             link:'https://github.com/HaiderAliqnt'
@@ -46,30 +46,30 @@ function Aboutpage() {
 
     const tech = [
         {
-            tech_logo_one:'src/assets/react.png',
+            tech_logo_one:'/assets/react.png',
             tech_name_one:'React',
-            tech_logo_two:'src/assets/express.png',
+            tech_logo_two:'/assets/express.png',
             tech_name_two:'Express',
-            tech_logo_three:'src/assets/node.png',
+            tech_logo_three:'/assets/node.png',
             tech_name_three:'Node'
 
         },
         {
-            tech_logo_one:'src/assets/pgsql.png',
+            tech_logo_one:'/assets/pgsql.png',
             tech_name_one:'PGSql',
-            tech_logo_two:'src/assets/docker.png',
+            tech_logo_two:'/assets/docker.png',
             tech_name_two:'Docker',
-            tech_logo_three:'src/assets/git.png',
+            tech_logo_three:'/assets/git.png',
             tech_name_three:'Git'
 
         },
     
         {
-            tech_logo_one:'src/assets/linux.png',
+            tech_logo_one:'/assets/linux.png',
             tech_name_one:'Linux',
-            tech_logo_two:'src/assets/cpp.png',
+            tech_logo_two:'/assets/cpp.png',
             tech_name_two:'C++',
-            tech_logo_three:'src/assets/python.png',
+            tech_logo_three:'/assets/python.png',
             tech_name_three:'Python'
         }
     ]
